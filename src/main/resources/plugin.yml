@@ -1,0 +1,19 @@
+name: NeptuneMessages
+version: '${project.version}'
+main: net.neptunesmp.nm.NeptuneMessages
+api-version: '1.21'
+description: Op-only Menue, um farbige Nachrichten als "Neptune SMP" in alle Welten zu senden.
+author: Neptune SMP
+softdepend: [Multiverse-Core, Simpleverse]
+
+commands:
+  nm:
+    description: Oeffnet das Neptune-Messages-Menue
+    usage: /nm [text | reload]
+    aliases: [neptunemessages]
+    permission: neptunemessages.use
+
+permissions:
+  neptunemessages.use:
+    description: Darf Neptune Messages benutzen (nur Operatoren)
+    default: op
